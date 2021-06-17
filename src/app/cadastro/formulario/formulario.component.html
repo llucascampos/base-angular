@@ -1,0 +1,94 @@
+<form class="form" [formGroup]="formCliente">
+
+    <div class="tituloForm">
+        <h1>Formulario de cadastro</h1>
+    </div>
+
+    <div class="formDadosPessoais">
+        <div>
+            <h2>Dados pessoais</h2>
+        </div>
+
+        <div class="campo">
+            <label for="nome ">Nome: </label>
+            <input type="text" name="nome" formControlName="nome">
+            <ng-container *ngIf="formCliente.controls.nome.touched">
+                <span *ngIf="formCliente.controls.nome.errors">
+                    Campo obrigatório
+                </span>
+            </ng-container>
+        </div>
+
+        <div class="campo">
+            <label for="sobrenome">SobreNome: </label>
+            <input type="text" name="sobrenome" formControlName="sobrenome">
+        </div>
+
+        <div class="campo">
+            <label for="cpf">CPF: </label>
+            <input type="number" name="cpf" formControlName="cpf">
+        </div>
+
+        <div class="campo">
+            <label for="rg">RG: </label>
+            <input type="number" name="rg" formControlName="rg">
+        </div>
+
+
+        <div class="campo">
+            <label for="telefone">Telefone: </label>
+            <input type="string" name="telefone" formControlName="telefone">
+        </div>
+
+        <div class="formEndereco">
+            <div>
+                <h2>Endereço</h2>
+            </div>
+
+            <div class="campo">
+                <label for="logradouro">Logratorio</label>
+                <select name="logradouro" formControlName="logradouro">
+                    <option value="rua">Rua</option>
+                    <option value="avenida">Avenida</option>
+                </select> <br>
+            </div>
+
+            <div class="campo">
+                <label for="endereco">Endereco: </label>
+                <input type="text" name="endereco" formControlName="endereco">
+            </div>
+
+            <div class="campo">
+                <label for="numero">Nº</label>
+                <input type="text" name="numero" formControlName="numero">
+            </div>
+
+            <div class="campo">
+                <label for="cep">CEP: </label>
+                <input type="text" name="cep" formControlName="cep">
+            </div>
+
+            <div class="campo">
+                <label for="bairro">Bairro: </label>
+                <input type="text" name="bairro" formControlName="bairro">
+            </div>
+
+            <div class="campo">
+                <label for="estado">Estado: </label>
+                <input type="text" name="estado" formControlName="estado">
+            </div>
+            <div class="campo">
+                <label for="cidade">Cidade: </label>
+                <input type="text" name="cidade" formControlName="cidade">
+            </div>
+
+        </div>
+
+    </div>
+
+    <div>
+        <button type="submit" (click)="onSubmit()"  >Enviar </button>
+    </div>
+
+
+</form>

@@ -1,0 +1,51 @@
+.container{
+    display: flex;
+    flex-direction: column;    
+    width: 100%;
+    min-height: 100vh;
+}
+
+
+.container > *{
+    border: solid 1px black;
+    margin: 10px;
+    padding: 10px;
+}
+
+.content > *{
+    border: solid 1px black;
+    margin: 10px;
+    padding: 10px;
+}
+
+content{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+    flex: 1;
+    
+}
+
+.principal{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 ;
+    justify-content: center;
+    text-align: center;
+    flex-basis: auto;
+    flex-basis: auto;
+}
+
+.principal div{
+    border: solid 1px black;
+    margin: 10px;
+    padding: 10px;
+    flex: 1 1 0;
+}
+
+@media screen and (max-width: 600px) {
+    content{
+        display: flex;
+        flex-direction: column;
+    }
+}

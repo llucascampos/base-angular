@@ -1,0 +1,83 @@
+.container > *{
+    background-color: orange;
+    border: solid 1px black;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    color: blue;
+    transition: all 150ms ease;
+    
+}
+
+
+
+.container {
+    display: flex;
+
+    /* abaixo defini a direção dos elementos (linha ou coluna) */
+    flex-direction: column;
+    
+    /* Defini que vai ter quebra de linha dos itens quando for maior que a container */
+    flex-wrap: wrap;
+
+    /* Pode se substituir as duas linhas de cima com apenas uma igual abaixo*/
+    flex-flow: column* wrap;
+
+    /* possicionar os itens no inicio meio o fim da pagina (horizontal) espaco iguais entre eles */
+    /* justify-content: space-around; */
+
+    /* Alinhar os itens na vertical */
+    align-items: center;
+
+    /* possicionar os items na vertigal  */
+    /* align-content: space-around ; */
+
+    width: 50%;
+    height: 300px;
+
+
+    border: solid 1px black;
+}
+
+
+/* itens */
+
+.container div:nth-child(2){
+    /* order: -1; */
+    
+    /* alinhar um elemento só  */
+    /* align-self: flex-end; */
+
+    /* Faz o item crescer */
+    /* flex-grow: 1; */
+
+    /* Fez o item encolher */
+    /* flex-shrink: 3; */
+
+    
+    
+}
+
+.container div {
+
+    /* flex-basis: auto; */
+    /* flex-grow: 3; */
+}
+
+
+.container2{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    border: black solid 1px;
+    align-items: center;
+    justify-content: center
+}
+
+.box {
+    width: 200px;
+    height: 300px;
+    flex-wrap: wrap;
+
+
+}

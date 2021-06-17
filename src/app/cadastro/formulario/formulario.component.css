@@ -1,0 +1,102 @@
+.form{
+    margin:  0px auto;
+    width: 90%;
+    padding: 0px;
+}
+
+@media only screen and (max-device-width: 900px) {
+
+}
+
+@media (min-width: 20px) { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ 
+    .tituloForm{
+        background-color: green;
+        font-size: 1em;
+        text-align: center;
+        
+    }
+
+ 
+    input, select{
+        width: 100%;
+        margin-bottom: 20px;
+        height: 1.7em;
+        border: black solid 1px;
+    }
+
+}
+
+@media (min-width:480px) { /* smartphones, Android phones, landscape iPhone */ 
+    .tituloForm{
+        background-color: gray;
+    }
+
+}
+@media (min-width:600px) { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ 
+    .tituloForm{
+        background-color: red;
+    }
+
+    label{
+        float: left;
+        display: block;
+        width: 20%;
+    }
+
+    input, select{
+        width: 70%;
+    }
+
+}
+@media (min-width:801px) { /* tablet, landscape iPad, lo-res laptops ands desktops */ 
+    .tituloForm{
+        background-color: blue;
+        font-size: 2em;
+    }
+
+    label{
+        float: left;
+        display: block;
+        width: 100px;
+    }
+    input, select{
+        width: 100%;
+        margin-bottom: 20px;
+        height: 1.7em;
+        border: black solid 1px;
+    }
+
+    .campo{
+
+        margin: 0% 5%;
+        width: 40%;
+        float: left;
+        
+    }
+
+    .formDadosPessoais{
+        width: 100%;
+        margin: auto;
+
+        
+    }
+
+    .formEndereco{
+        clear: both;
+        width: 100%;
+    }
+
+}
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ 
+    .tituloForm{
+        background-color: yellow;
+    }
+
+}
+@media (min-width:1281px) { /* hi-res laptops and desktops */ 
+    .tituloForm{
+        background-color: orange;
+    }
+
+}
+
