@@ -1,0 +1,110 @@
+@media(min-width: 100px){
+    .wrapper div{
+        background-color: royalblue;
+        padding: 1rem;
+    } 
+    
+    .wrapper div:nth-child(even) {
+        background-color: skyblue;
+    }
+    
+    .wrapper {
+        display: grid;
+        /* grid-template-columns: 200px 200px 200px;  numero e tamanho de colunas */
+        /* grid-template-columns: minmax(20px, 40%) repeat(3, 200px) 10%;  numero e tamanho de colunas com repeat */
+        grid-template-columns: repeat(1, 1fr) ;  /*numero e tamanho de colunas com repeat fracao*/
+        /* grid-column-gap: 1em; espaçamento entre as colunas */
+        /* grid-row-gap:  1em; espacamento entre as linhas */
+        grid-gap: 1em; /*espacamente entre as linhas e colunas*/
+        /* grid-template-rows: 200px 200px 200px; numero de linhas e seu tamanho */
+        grid-template-rows: minmax(100px, auto);
+        /* grid-auto-rows: 300px; tamanho das linhas que são criadas automaticamentes conforme vai adicionando divs */
+    }
+    
+    .wrapper > div:nth-child(2){
+        /* align-self: center; alinhamento da vertical */
+        /* justify-self: center; alinhamento na horizontal */
+    
+        /* ou */
+        place-items: inherit;
+    }
+    
+    .wrapper > div:nth-child(1){
+        place-items: inherit;
+        grid-column: 1 / -1; /* numero de colunas que vai ocupar nesse exemplo da coluna 1 até a 3*/
+        
+       /* grid-column: 1 / span 3; numero de spaços que vai ocupar */
+    
+    }
+    .wrapper > div:nth-child(2){
+        grid-column: 1 ; /* numero de colunas que vai ocupar nesse exemplo da coluna 1 até a 3*/
+        
+    }
+    
+    .wrapper > div:nth-child(3){
+        grid-column: 1  ; /* numero de colunas que vai ocupar nesse exemplo da coluna 1 até a 3*/
+        
+    }
+    
+    .wrapper > div:nth-child(5){
+        grid-column: 1 / -1 ; /* numero de colunas que vai ocupar nesse exemplo da coluna 1 até a 3*/
+        
+        
+    }
+    
+}
+
+@media(min-width: 500px){
+    .wrapper div{
+        background-color: royalblue;
+        padding: 1rem;
+    } 
+    
+    .wrapper div:nth-child(even) {
+        background-color: skyblue;
+    }
+    
+    .wrapper {
+        display: grid;
+        /* grid-template-columns: 200px 200px 200px;  numero e tamanho de colunas */
+        /* grid-template-columns: minmax(20px, 40%) repeat(3, 200px) 10%;  numero e tamanho de colunas com repeat */
+        grid-template-columns: repeat(4, 1fr) ;  /*numero e tamanho de colunas com repeat fracao*/
+        /* grid-column-gap: 1em; espaçamento entre as colunas */
+        /* grid-row-gap:  1em; espacamento entre as linhas */
+        grid-gap: 1em; /*espacamente entre as linhas e colunas*/
+        /* grid-template-rows: 200px 200px 200px; numero de linhas e seu tamanho */
+        grid-template-rows: minmax(100px, auto);
+        /* grid-auto-rows: 300px; tamanho das linhas que são criadas automaticamentes conforme vai adicionando divs */
+    }
+    
+    .wrapper > div:nth-child(2){
+        /* align-self: center; alinhamento da vertical */
+        /* justify-self: center; alinhamento na horizontal */
+    
+        /* ou */
+        place-items: inherit;
+    }
+    
+    .wrapper > div:nth-child(1){
+        grid-column: 1 / -1; /* numero de colunas que vai ocupar nesse exemplo da coluna 1 até a 3*/
+        /* grid-column: 1 / span 3; numero de spaços que vai ocupar */
+    
+    }
+    .wrapper > div:nth-child(2){
+        grid-column: 1 ; /* numero de colunas que vai ocupar nesse exemplo da coluna 1 até a 3*/
+        
+    }
+    
+    .wrapper > div:nth-child(3){
+        grid-column: 2 / span 2 ; /* numero de colunas que vai ocupar nesse exemplo da coluna 1 até a 3*/
+        
+    }
+    
+    .wrapper > div:nth-child(5){
+        grid-column: 1 / -1 ; /* numero de colunas que vai ocupar nesse exemplo da coluna 1 até a 3*/
+        
+        
+    }
+    
+}
+
